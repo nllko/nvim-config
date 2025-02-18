@@ -21,9 +21,13 @@ require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.autocomplete"),
 	require("plugins.autoformat"),
+	require("plugins.scrollbar"),
 	require("plugins.gitsigns"),
 	require("plugins.alpha"),
 	require("plugins.indent-blankline"),
 	require("plugins.lazygit"),
+	require("plugins.multicursor"),
+	require("plugins.statuscol"),
+	require("plugins.ufo"),
 	require("plugins.misc"),
 })

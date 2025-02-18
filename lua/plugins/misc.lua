@@ -38,7 +38,21 @@ return {
 		-- High-performance color highlighter
 		"norcalli/nvim-colorizer.lua",
 		config = function()
-			require("colorizer").setup()
+			require("colorizer").setup({
+				"*",
+				css = { rgb_fn = true },
+			})
 		end,
+	},
+	{
+		-- Create Color Code in neovim
+		"uga-rosa/ccc.nvim",
+		config = function()
+			vim.opt.termguicolors = true
+			require("ccc").setup()
+		end,
+		keys = {
+			{ "<leader>cp", "<cmd>CccPick<cr>", desc = "Open [C]olor [P]icker" },
+		},
 	},
 }
